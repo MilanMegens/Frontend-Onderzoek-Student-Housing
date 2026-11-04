@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    color: #1F2937;
+    background-color: #FFFFFF;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar,
+.hero,
+.features,
+.footer {
+    padding-left: max(24px, calc((100% - 1100px) / 2 + 24px));
+    padding-right: max(24px, calc((100% - 1100px) / 2 + 24px));
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.navbar .logo {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.navbar .items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.navbar .items p {
+    font-size: 15px;
+    padding: 12px 0;
+    cursor: pointer;
+}
+
+.navbar .items p:hover {
+    color: #1D4ED8;
+}
+
+/* Main */
+.main {
+    flex: 1;
+}
+
+/* Hero */
+.main .hero {
+    background-color: #F3F4F6;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.main .hero h1 {
+    font-size: 44px;
+    line-height: 1.15;
+    font-weight: 700;
+    max-width: 640px;
+}
+
+.main .hero p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #4B5563;
+    max-width: 560px;
+}
+
+.main .hero a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 24px;
+    background-color: #1D4ED8;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.main .hero a:hover {
+    background-color: #1E40AF;
+}
+
+/* Features */
+.main .features {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.main .features .item {
+    flex: 1 1 280px;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.main .features .item h1 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.main .features .item p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #4B5563;
+}
+
+/* Footer */
+.footer {
+    border-top: 1px solid #E5E7EB;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 14px;
+    color: #4B5563;
+}
